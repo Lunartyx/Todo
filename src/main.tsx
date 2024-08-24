@@ -27,7 +27,7 @@ const router = createBrowserRouter([
         element: <List />
       },
       {
-        path: "/contact",
+        path: "/todo",
         element: <Todo />,
       },
     ],

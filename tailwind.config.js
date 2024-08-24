@@ -16,6 +16,8 @@ export default {
       fontFamily: {
         h1: ['Alegreya Sans SC', 'sans-serif'],
         p: ['Alegreya', 'serif'],
+        kanit: ['Kanit', 'sans-serif'],
+        kode: ['Kode', 'mono']
       },
       gridTemplateColumns: {
         '70/30': '70% 28%',

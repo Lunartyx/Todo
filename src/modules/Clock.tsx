@@ -14,7 +14,7 @@ const Clock = () => {
     }, []);
 
     return (
-        <div className="min-w-min">
+        <div className="min-w-min font-kode">
             {time}
         </div>
     );
