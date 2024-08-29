@@ -4,8 +4,6 @@ Dashboard for my todo device
 
 ## Todo's for the Project
 
-Fix bug on right arrow button (currently forwarding to react router /list)
-
 Create the 24h time board
 
 Create Pop up component for adding a new event
