@@ -10,9 +10,10 @@ const MainHeader = () => {
       <section className="flex items-center justify-between">
         <div className="w-1/3">
           <div className="flex">
-            <Link to="/"><Icon iconstyle={iconstyle} icon="calendar_month" /></Link>
-            <Link to="/list"><Icon iconstyle={iconstyle} icon="format_list_bulleted" /></Link>
+            <Link to="/"><Icon iconstyle={iconstyle} icon="widgets" /></Link>
+            <Link to="/calendar"><Icon iconstyle={iconstyle} icon="calendar_month" /></Link>
             <Link to="/todo"><Icon iconstyle={iconstyle} icon="pending_actions" /></Link>
+            <Link to="/weather"><Icon iconstyle={iconstyle} icon="partly_cloudy_day" /></Link>
           </div>
         </div>
         <div className="w-1/3">

@@ -8,8 +8,9 @@ import App from './App.tsx';
 import ErrorPage from "./pages/error-page.tsx";
 
 import Todo from './pages/Todo.tsx';
-import List from './pages/List.tsx'
+import Dashboard from './pages/Dashboard.tsx'
 import Calendar from './pages/Calendar.tsx'
+import Weather from "./pages/Weather.tsx";
 
 const router = createBrowserRouter([
   {
@@ -20,15 +21,19 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Calendar />
+        element: <Dashboard />
       },
       {
-        path: "/list",
-        element: <List />
+        path: "/calendar",
+        element: <Calendar />
       },
       {
         path: "/todo",
         element: <Todo />,
+      },
+      {
+        path: "/weather",
+        element: <Weather />,
       },
     ],
   },

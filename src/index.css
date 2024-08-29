@@ -47,3 +47,11 @@ html, body {
 *::selection {
   background: none;
 }
+
+
+.text-gradient {
+  background-image: linear-gradient(to bottom right, #f3b50a, #fffb00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

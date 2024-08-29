@@ -12,6 +12,7 @@ type SelectedCell = {
 
 const Calendar = () => {
   const [selectedCell, setSelectedCell] = useState<SelectedCell>(null);
+  const [currentTime, setCurrentTime] = useState(new Date());
 
   const today = new Date();
   const startDate = startOfWeek(today, { weekStartsOn: 1 }); // Start the week on Monday
@@ -20,8 +21,8 @@ const Calendar = () => {
   const hours = Array.from({ length: 17 }, (_, i) => i + 6); // Array of hours from 6 AM to 10 PM
 
   // Calculate the position of the current time
-  const currentHour = today.getHours();
-  const currentMinutes = today.getMinutes();
+  const currentHour = currentTime.getHours();
+  const currentMinutes = currentTime.getMinutes();
   const slotHeight = 40; // Assuming each hour slot is 40px (h-10 in Tailwind is roughly 2.5rem, which is 40px)
   const timePosition = (currentHour - 6) * slotHeight + (currentMinutes / 60) * slotHeight;
 
@@ -43,6 +44,16 @@ const Calendar = () => {
       return () => clearTimeout(timer);
     }
   }, [selectedCell]);
+
+  // Update the current time every 5 minutes
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 60000); // 300,000 milliseconds = 5 minutes
+
+    // Cleanup interval on component unmount
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="flex-grow bg-white mt-2 mb-2">
