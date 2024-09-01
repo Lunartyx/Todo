@@ -23,7 +23,3 @@ Create listed view of events
 Create the Todo Tab to see todays event, checklist style
 
 Create Digital Keyboard for writing in various components
-
-
-
-Hallo dat ist eine test
