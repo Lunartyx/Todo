@@ -2,7 +2,7 @@ import Icon from "./Icon";
 import Clock from '../modules/Clock';
 import { Link } from "react-router-dom";
 
-const iconstyle = "material-symbols-rounded text-6xl m-2 p-1 rounded-xl shadow-md shadow-gray hover:bg-gray-200 hover:shadow-lg";
+const iconstyle = "material-symbols-rounded bg-gray-50 text-6xl m-2 p-1 rounded-xl shadow-md shadow-gray hover:bg-gray-200 hover:shadow-lg";
 
 const MainHeader = () => {
   return (

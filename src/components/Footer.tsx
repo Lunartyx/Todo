@@ -4,7 +4,7 @@ import { useState } from "react";
 import Icon from "./Icon";
 import PopInBanner from "../components/PopInBanner";
 
-const iconstyle = "material-symbols-rounded text-6xl m-2 p-1 rounded-xl shadow-md shadow-gray hover:bg-gray-200 hover:shadow-lg";
+const iconstyle = "material-symbols-rounded bg-gray-50 text-6xl m-2 p-1 rounded-xl shadow-md shadow-gray hover:bg-gray-200 hover:shadow-lg";
 
 const Footer = () => {
     const [isBannerVisible, setIsBannerVisible] = useState(false);
@@ -32,10 +32,10 @@ const Footer = () => {
                 </div>
                 <div className="w-1/3">
                     <div className="flex justify-end items-center">
-                        <Link to="/">
+                        <Link to="/calendar">
                             <Icon iconstyle={iconstyle} icon="arrow_back" />
                         </Link>
-                        <Link to="/">
+                        <Link to="/calendar">
                             <Icon iconstyle={iconstyle} icon="arrow_forward" />
                         </Link>
                     </div>
