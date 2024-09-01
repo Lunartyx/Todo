@@ -1,11 +1,12 @@
+import React from 'react';
 
 
-const Weather = () => {
+const App: React.FC = () => {
     return (
-        <>
+        <div>
 
-        </>
-    )
-}
+        </div>
+    );
+};
 
-export default Weather
+export default App;
